@@ -1,0 +1,77 @@
+.listcenterbackground {
+	/* position:fixed; */
+	/* width:100%; */
+	/* min-height:100vw; */
+	/* height:100%; */
+	/* left:0; */
+	/* top:0; */
+	/* margin: 0; */
+    /* padding: 0 3vw 0 3vw; */
+    background-color: #ffffff;
+
+
+}
+
+.listcenterselect {
+	/* display: grid; */
+	/* grid-template-columns: 1fr ; */
+	padding: 0 0vw;
+	/* padding-inline-start:0; */
+	/* align-content:center  */
+}
+
+.listcenter-list {
+	/* float:left; */
+	padding:0.5vw 1vw;
+	/* margin:0 1vw; */
+	color:black;
+	width:10vw;
+	font-size:4vw;
+	text-align:center;
+}
+.listcenter-listlist{
+	/* display: flex; */
+	/* flex-direction: row; */
+    /* flex-wrap: wrap; */
+	/* flex-flow:row wrap; */
+	list-style-type: none;
+	displey:-webkit-flex; 
+	display: flex; 
+	-webkit-flex-flow:row nowrap;
+	flex-flow:row nowrap; 
+	overflow-x: auto; 
+	list-style: none;
+	height:10vw;
+	-ms-overflow-style: none;
+	overflow: -moz-scrollbars-none;	
+	align-items:center;
+}
+
+.listcenter-listlist::-webkit-scrollbar { width: 0 !important }
+/* .listcenter-listlist { -ms-overflow-style: none; } */
+
+.listcenter-listlist li{
+	/* width:50px; */
+
+	/* display:inline-block; */
+
+}
+
+/* .listcenter-list:hover { */
+    /* background-color:#AAAAAA; */
+
+    /* border: yellow solid 1px; */
+
+/* } */
+
+.listcenter-list:visited{
+	color:yellow;
+}
+.listcenter-listClick{
+	background-color:#eaeaec;
+	/* padding:0.5vw 1vw; */
+	font-size:4vw;
+	width:10vw;
+	color: #108ee9;
+	text-align:center;
+}

@@ -1,0 +1,96 @@
+
+
+
+.downlistgrid {
+	display: grid;
+	grid-template-columns: 80% 10% 10% ;
+	/* grid-gap:1.5vw; */
+	grid-auto-flow:row;
+	/* margin: 1vw 0; */
+	place-items: center  center;
+	/* height: 22.5vw; */
+	grid-row-gap:2vw;
+	padding: 0.5vw 0;
+	
+}
+.rategrid {
+	display: flex;
+	/* grid-template-columns: 25% 25% 25% 25% ; */
+	/* grid-gap:1.5vw; */
+	/* grid-auto-flow:row; */
+	/* margin: 1vw 0; */
+	/* place-items: center  center; */
+	height: 10vw;
+	/* grid-row-gap:2vw; */
+	padding: 1vw 0;
+	flex-flow: row nowrap;
+	justify-content:space-around;
+
+	
+}
+
+.columns {
+	position:relative;
+    text-align: center;
+    width: 92%;
+	height:5vw;
+	background-color:#696969  ;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.columns:hover {
+    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    /* IE 9 */
+    -moz-transform: scale(1.05);
+    /* Firefox */
+    -webkit-transform: scale(1.05);
+    /* Safari 和 Chrome */
+    -o-transform: scale(1.05);
+    border: yellow solid 1px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.cid-text {
+    position:absolute;
+	 bottom: 0; 
+	 left: 0.5vw;
+     color: #F5F5F5;
+    font-size: 1vw;
+}
+.name-text {
+    position:absolute;
+	 top: 0; 
+	 left: 0.5vw;
+     color: #FFFFFF ;
+    font-size: 1.7vw;
+}
+
+.size-text {
+    position:absolute;
+	bottom:0;
+	 right: 0.5vw;
+     color: #F5F5F5;
+    font-size: 1.5vw;
+}
+.ok-text {
+    position:absolute;
+	top:0;
+	 right: 0.5vw;
+     color: yellow;
+    font-size: 1.5vw;
+}
+.rate-text {
+     color:#AAAAAA;
+    font-size: 4vw;
+}
+
+
+/* .size-text { */
+    /* position:absolute; */
+	/* top:50%; */
+	 /* right: 0.5vw; */
+     /* color: #F5F5F5; */
+    /* font-size: 1.5vw; */
+	/* transform:translate(0,-50%) */
+/* } */

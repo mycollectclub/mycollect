@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+	<script>
+	const host = window.location.host;
+	
+	function gethomeconfig(url) {
+		let homeconfigdata={}
+		try {
+			var req = new XMLHttpRequest();
+			req.open('GET', url, false);
+			req.send(null);
+			if(req.status == 200){			
+				homeconfigdata=JSON.parse(req.responseText)
+			}
+			let home=""
+			let getroot=homeconfigdata.Root			
+			
+			let gethome=homeconfigdata.Home
+			if(!(getroot== "undefined" || getroot == null || getroot == "")){
+				home=homeconfigdata.Root
+			}else{
+
+				if(!(gethome== "undefined" || gethome == null || gethome == "")){ 
+					home=homeconfigdata.Home
+
+				}
+			} 
+
+			if (!(home== "undefined" || home == null || home == "")) { 
+				let URL=window.location.href
+
+				if (URL.indexOf (home)==-1){					
+					window.location.href="http://"+host+home	
+				}
+			
+			}		
+		
+		} catch(err) {
+		}
+	
+	}
+	
+	function isMobile () {
+	  let sUserAgent = navigator.userAgent.toLowerCase()
+	  let bIsMobile = /AppleWebKit.*Mobile/i.test(navigator.userAgent)
+
+	  let bIsIpad = sUserAgent.match(/ipad/i) !== null
+
+	  let bIsIphoneOs = sUserAgent.match(/iphone os/i) !== null
+
+	  let bIsMidp = sUserAgent.match(/midp/i) !== null
+
+	  let bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) !== null
+
+	  let bIsUc = sUserAgent.match(/ucbrowser/i) !== null
+
+	  let bIsAndroid = sUserAgent.match(/android/i) !== null
+
+	  let bIsCE = sUserAgent.match(/windows ce/i) !== null
+
+	  let bIsWM = sUserAgent.match(/windows mobile/i) !== null
+
+	  if (
+
+	    bIsMobile ||
+
+	    bIsIpad ||
+
+	    bIsIphoneOs ||
+
+	    bIsMidp ||
+
+	    bIsUc7 ||
+
+	    bIsUc ||
+
+	    bIsAndroid ||
+
+	    bIsCE ||
+
+	    bIsWM
+
+	  ) {
+	    return true
+
+	  } else {
+	    return false
+
+	  }
+
+	}
+
+	let kodiaddres = window.sessionStorage.getItem("kodiaddres");
+	if (!kodiaddres){
+		gethomeconfig("http://"+host+'/homeconfig/homeconfig');		
+	}
+	if(!isMobile()){
+		let URL=window.location.href
+		if (URL.indexOf ("QmRPNqugRmdT8eEC1YfDHN1gg7RfxDRA3mPHZgBWFrsQgQ")==-1){					
+			window.location.href="http://"+host+"/ipfs/QmRPNqugRmdT8eEC1YfDHN1gg7RfxDRA3mPHZgBWFrsQgQ"
+		}
+		
+	}
+
+	</script>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>私人珍藏</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

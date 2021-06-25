@@ -1,0 +1,98 @@
+
+
+
+
+.othergrid {
+	display: grid;
+	grid-template-columns: 50% 50% ;
+	/* grid-gap:1.5vw; */
+	grid-auto-flow:row;
+	/* margin: 1vw 0; */
+	place-items: center  center;
+	/* height: 22.5vw; */
+	grid-row-gap:2vw;
+	padding: 0.5vw 0;
+
+	
+}
+
+
+.othercolumns {
+	position:relative;
+    /* text-align: center; */
+    width: 92%;
+	height:11vw;
+	background-color:#888888  ;
+	padding: 0.5vw 1vw;
+
+}
+
+.othercolumns:hover {
+    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    /* IE 9 */
+    -moz-transform: scale(1.05);
+    /* Firefox */
+    -webkit-transform: scale(1.05);
+    /* Safari 和 Chrome */
+    -o-transform: scale(1.05);
+    border: yellow solid 1px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.othercid-text {
+    position:absolute;
+	 bottom: 0.5vw; 
+	 left: 0.8vw;
+     color: #F5F5F5;
+    font-size: 1.2vw;
+}
+.othername-text {
+	text-align:left;
+     color: #FFFFFF;
+    font-size: 1.5vw;
+	white-space:nowrap;
+}
+
+.otherOverview-text {
+	text-indent: 2em; /* 缩进 */
+     color: #BEBEBE;
+    font-size: 1.2vw;
+	text-align:left;
+
+}
+.otherok-text {
+    position:absolute;
+	top:0.5vw;
+	 right: 0.5vw;
+     color: #ff00d4;
+    font-size: 2.5vw;
+}
+.otherdown-text{
+    position:absolute;
+	top:0.5vw;
+	 right: 0.5vw;
+     color: #005aff;
+    font-size: 2vw;
+}
+
+.rowtext {
+    margin: 2vw ;
+	font-size: 5vw;
+    color: #005aff;
+}
+
+/* .rate-text { */
+     /* color:#FFFFFF; */
+    /* font-size: 2vw; */
+/* } */
+
+
+/* .size-text { */
+    /* position:absolute; */
+	/* top:50%; */
+	 /* right: 0.5vw; */
+     /* color: #F5F5F5; */
+    /* font-size: 1.5vw; */
+	/* transform:translate(0,-50%) */
+/* } */
