@@ -19,17 +19,23 @@ const menuData = [
   },
   {
     value: '2',
+    label: '即时资源池',
+    path:'/pubother',
+	isLeaf: true,	
+  },
+  {
+    value: '3',
     label: '资源池列表',
     path:'/other',
 	isLeaf: true,	
   },
   {
-    value: '3',
+    value: '4',
     label: '编辑播放设备',
     path:'/editkodihost',
 	isLeaf: true,	
   },
-  {value: '4',
+  {value: '5',
     label: '频道操作',
     children: [
       {
@@ -56,9 +62,9 @@ const menuData = [
 ];
 
 
-const host = window.location.host;
+// const host = window.location.host;
 
-// const host = '192.168.31.250:5100'
+const host = '192.168.31.250:5100'
 var kodihost=window.location.hostname+":8080"
 
 var ownpath =""
@@ -957,7 +963,7 @@ class Home extends React.Component {
       <Menu
         className="foo-menu"
         data={menuData}
-        value={['4']}
+        value={['5']}
         onChange={this.onMenuChange}
         height={document.documentElement.clientHeight * 0.6}
       />

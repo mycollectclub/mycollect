@@ -141,7 +141,11 @@ class Homelist extends React.Component {
 								return <Homelist13 key={index} homeListData={data} />; 
 								break;
 							case "customize":
-								return <div key={index} dangerouslySetInnerHTML={{ __html: data.customize }} /> ; 
+								let customize=""
+								if(data.customize){									
+									customize=data.customize.replace(/QmW7sVdGx6kbCHBFA1txxkRCAhG5VA2Yun9pesqBW15Sbp/g,"http://"+host+this.props.privatepath)									
+								}
+								return <div key={index} dangerouslySetInnerHTML={{ __html: customize }} /> ; 
 								break;
 							 default:return null;
 						}

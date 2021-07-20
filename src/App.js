@@ -9,6 +9,7 @@ import ListCenter from "./home/ListCenter";
 import Search from "./Search";
 // import Test from "./Ipfsadd";
 import Other from "./home/Other";
+import PubOther from "./home/PubOther";
 import PlayMove from "./home/PlayMove";
 
 
@@ -21,6 +22,7 @@ function App() {
 				<Route path="/home" component={Home}></Route>
 				<Route path="/downList" component={DownList} />
 				<Route path="/other" component={Other} />
+				<Route path="/pubother" component={PubOther} />
 				<Route path="/editkodihost" component={Editkodihost} />
 				<Route path="/listCenter" component={ListCenter} />
 				<Route path="/search" component={Search} />
