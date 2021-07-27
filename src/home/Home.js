@@ -62,9 +62,9 @@ const menuData = [
 ];
 
 
-// const host = window.location.host;
+const host = window.location.host;
 
-const host = '192.168.31.250:5100'
+// const host = '192.168.31.250:5100'
 var kodihost=window.location.hostname+":8080"
 
 var ownpath =""
