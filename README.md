@@ -21,12 +21,13 @@ http://XXX.XXX.XXX.XXX:5100
 <img src="https://github.com/mycollectclub/filesdown/blob/main/pic/move.jpg" width="200" height="300" alt="电影"/>  
 <img src="https://github.com/mycollectclub/filesdown/blob/main/pic/tv.jpg" width="200" height="300" alt="电视"/>  
 <img src="https://github.com/mycollectclub/filesdown/blob/main/pic/search.jpg" width="200" height="300" alt="搜索"/>  
+  
 #可以编辑自己的视频资源
 基于一个公共资源池，可以叠加自己的影视资源形成一个自己的整体资源池。也可以在原有的影片中添加不同分辨率的视频。可分享自己的资源池也可访问其他人分享的资源池。  
 <img src="https://github.com/mycollectclub/filesdown/blob/main/pic/share.jpg" width="300" height="280" alt="示意图"/>  
 <img src="https://github.com/mycollectclub/filesdown/blob/main/pic/edit.jpg" width="300" height="150" alt="编辑"/>  
 <img src="https://github.com/mycollectclub/filesdown/blob/main/pic/pub.jpg" width="300" height="150" alt="发布"/>  
-
+  
 #建自己个性化的网站
 可以修改开源的网站代码，建一个适合自己的网站，也可根据需求按照这个思路重新做一个。  
 
