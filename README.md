@@ -12,7 +12,7 @@ https://github.com/mycollectclub/filesdown
 https://github.com/mycollectclub/mycollect/releases  程序下载
 # 安装
 1）    下载
-
+https://github.com/mycollectclub/mycollect/releases
 2）	复制到/usr/local/bin目录  
 3）	初始化
 命令：ipfs init
